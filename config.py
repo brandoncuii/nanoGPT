@@ -13,15 +13,6 @@ class GPTConfig:
         self.batch_size = 64  # Number of sequences per batch
         self.max_iters = 5000  # Total number of training iterations
         self.dropout = 0.2
+
+        self.bias = True  # Whether to use bias in linear layers
     
-if __name__ == "__main__":
-    config = GPTConfig()
-    
-    print("=== Our GPT Model Configuration ===")
-    print(f"Vocabulary size: {config.vocab_size} characters")
-    print(f"Context length: {config.block_size} characters") 
-    print(f"Number of layers: {config.n_layer}")
-    print(f"Number of attention heads: {config.n_head}")
-    print(f"Embedding dimension: {config.n_embd}")
-    print(f"Learning rate: {config.learning_rate}")
-    print(f"Device: {config.device}")
