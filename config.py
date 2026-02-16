@@ -10,8 +10,8 @@ class GPTConfig:
         # Training parameters
         self.learning_rate = 1e-4  # Learning rate for the optimizer
         self.device = "cpu" # Device to run the model on (cpu or cuda)
-        self.batch_size = 64  # Number of sequences per batch
-        self.max_iters = 5000  # Total number of training iterations
+        self.batch_size = 16  # Number of sequences per batch
+        self.max_iters = 3000  # Total number of training iterations
         self.dropout = 0.2
 
         self.bias = True  # Whether to use bias in linear layers
